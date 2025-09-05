@@ -1,0 +1,7 @@
+// Simple script to allow easy copying of email
+document.getElementById('email').addEventListener('click', function () {
+  const email = this.textContent;
+  navigator.clipboard.writeText(email).then(function () {
+    alert('Email copied to clipboard!');
+  });
+});
